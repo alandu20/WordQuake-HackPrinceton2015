@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Hack Princeton",
+  "version": "1.2",
+  "description": "Replaces the text 'the cloud' with 'my butt', as well as 'cloud' with 'butt' in certain contexts.",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "matches": ["*://*/*"],
+    "scripts": ["listener.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "activeTab",
+    "https://wordquake.me/*"
+  ]
+}
